@@ -1,0 +1,28 @@
+/* line 9, ../sass/mystyle.scss */
+body {
+  background-color: #DCDBD9;
+  color: #2C2C2C;
+  font: normal 100% Cambria, Georgia, serif;
+}
+
+/* line 14, ../sass/mystyle.scss */
+#page {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 18, ../sass/mystyle.scss */
+h1 {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+/* line 24, ../sass/mystyle.scss */
+h1 a {
+  color: #747474;
+  font: bold 11px Calibri, Optima, Arial, sans-serif;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+}

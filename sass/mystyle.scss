@@ -1,0 +1,30 @@
+$basefont: 16px;
+$h1font: 24px;
+
+@function emsizer($target, $context) {
+	@return $target/$context;
+}
+
+
+body {
+	background-color: #DCDBD9;
+	color: #2C2C2C;
+	font: normal 100% Cambria, Georgia, serif;
+}
+#page {
+	width: 960px;
+	margin: 0 auto;
+}
+h1 {
+	font-style: italic;
+	font-weight: normal;
+	font-size: emsizer($h1font,$basefont)#{em};  
+}
+
+h1 a {
+	color: #747474;
+	font: bold 11px Calibri, Optima, Arial, sans-serif;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
