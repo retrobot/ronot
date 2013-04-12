@@ -1,0 +1,20 @@
+{
+  "name": "ronot",
+  "version": "0.0.1",
+  "description": "Base scaffolding for websites",
+  "main": "index.js",
+  "scripts": {
+    "test": "workingt?"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/retrobot/ronot.git"
+  },
+  "keywords": [
+    "Ronot",
+    "grid"
+  ],
+  "author": "Kamil Kielan",
+  "license": "BSD",
+  "gitHead": "5aebd6942d1e6e185670d9eaaea6f5bae2b27c29"
+}
