@@ -1,6 +1,9 @@
 @import "compass";
 @import "compass/css3";
-@import "_normalize";
 @import "screen";
 @import "mystyle";
 
+
+/* Vendor stylesheets */
+@import "vendor/_h5bp";			// v 4.2.0.
+@import "vendor/_normalize";	// v 2.1.1
