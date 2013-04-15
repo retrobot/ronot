@@ -1,0 +1,12 @@
+/* Responsive Grid module */
+
+@mixin fx-grid($name, $columns) {
+	$per-column: 100%/$columns;
+	@for $i from 1 through $columns{
+	.#{$name}-#{$i} {
+		width: $per-column*$i;
+	}
+}
+}
+
+@include fx-grid(bonzo, 5);
