@@ -1,4 +1,6 @@
-/* Base, initial styling */
+/* Base, initial styling
+ * ========================================================================== */
+
 
 /*
  * Box sizing border box for everything
@@ -18,8 +20,8 @@ body {
 }
 
 /* ==========================================================================
-   Images
-   ========================================================================== */
+ *  Images. Inspired by inuit.css
+ * ========================================================================== */
 
 /* Fluid images */
 img{
@@ -60,6 +62,24 @@ figure > img{
     display:block;
 }
 
+/* ==========================================================================
+   Lists. From inuit.css v5.0.0
+   ========================================================================== */
+
+/* Remove vertical spacing from nested lists. */
+li{
+    > ul,
+    > ol{
+         margin-bottom:0;
+     }
+}
+
+/* Have a numbered `ul` without the semantics
+ * implied by using an `ol`. */
+
+/*ul*/.numbered-list{
+    list-style-type:decimal;
+}
 
 
 /* ==========================================================================
