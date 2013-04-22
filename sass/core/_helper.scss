@@ -32,7 +32,7 @@
 	}
 }
 
-.is-image-replaced {
+.is-img-replaced {
     background-color: transparent;
     border: 0;
     overflow: hidden;
@@ -74,10 +74,9 @@
  * when navigated to via the keyboard: h5bp.com/p
  */
 
-.is-visually-hidden-focusable {
+.is-visually-hidden.focusable {
 	&:active,
 	&:focus {
-		@extend %is-visually-hidden
 		clip: auto;
 	    height: auto;
 	    margin: 0;

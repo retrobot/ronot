@@ -1,0 +1,62 @@
+/* Headings - different sizes*/
+
+/* Small sizes */
+.milli {
+    @include font-size($milli-size);
+}
+.micro {
+    @include font-size($micro-size);
+}
+.nano {
+    @include font-size($nano-size);
+}
+
+/* Regular headings sizes */
+h1,.h1-sizing {
+    @include font-size($h1-size);
+}
+h2,.h2-sizing {
+    @include font-size($h2-size);
+}
+h3,.h3-sizing {
+    @include font-size($h3-size);
+}
+h4,.h4-sizing {
+    @include font-size($h4-size);
+}
+h5,.h5-sizing {
+    @include font-size($h5-size);
+}
+h6,.h6-sizing {
+    @include font-size($h6-size);
+}
+
+
+/* Large sizes */
+
+.mega {
+    @include font-size($mega-size);
+}
+.giga {
+    @include font-size($giga-size);
+}
+.tera {
+    @include font-size($tera-size);
+}
+
+
+/** From Iniut.css
+ * Heading groups and generic any-heading class.
+ * To target any heading of any level simply apply a class of `.hN`, e.g.:
+ *
+   <hgroup>
+       <h1 class=hN>inuit.css</h1>
+       <h2 class=hN>Best. Framework. Ever!</h2>
+   </hgroup>
+ *
+ */
+.hN{
+}
+hgroup .hN{
+    margin-bottom:0;
+}
