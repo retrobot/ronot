@@ -1,6 +1,7 @@
 /* Headings - different sizes*/
 
-/* Small sizes */
+
+/* Small sizes Oo. */
 .milli {
     @include font-size($milli-size);
 }
@@ -10,6 +11,7 @@
 .nano {
     @include font-size($nano-size);
 }
+
 
 /* Regular headings sizes */
 h1,.h1-sizing {
@@ -32,8 +34,7 @@ h6,.h6-sizing {
 }
 
 
-/* Large sizes */
-
+/* Large sizes .oO */
 .mega {
     @include font-size($mega-size);
 }

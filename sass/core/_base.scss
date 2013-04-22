@@ -18,6 +18,46 @@ body {
 }
 
 /* ==========================================================================
+   Images
+   ========================================================================== */
+
+/* Fluid images */
+img{
+    max-width:100%;
+}
+
+/* Non fluid images. Have to specify  width and/or height */
+img[width],
+img[height]{
+    max-width:none;
+}
+
+
+/* Rounded images. */
+.img--round { border-radius:$base-border-radius; }
+
+
+/* Image placement */
+.img--right{
+    float:right;
+    margin-bottom:$base-spacing-unit;
+    margin-left:$base-spacing-unit;
+}
+.img--left{
+    float:left;
+    margin-right:$base-spacing-unit;
+    margin-bottom:$base-spacing-unit;
+}
+.img--center{
+    display:block;
+    margin-right:auto;
+    margin-bottom:$base-spacing-unit;
+    margin-left:auto;
+}
+
+
+
+/* ==========================================================================
    Base styles from h5bp v4.2.0.
    ========================================================================== */
 
