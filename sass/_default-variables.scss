@@ -1,0 +1,47 @@
+/*  DEFAULT VARIABLES
+ * ========================================================================== */
+
+
+/* Visually hidden helper class in media queries */
+$responsive-visually-hidden: true!default;
+
+/* Debug mode */
+$debug-mode: false!default;
+
+/* Box sizing border box for everything
+ * http://paulirish.com/2012/box-sizing-border-box-ftw/  */
+$border-box-for-everything == true!default; 
+
+
+/*------------------------------------*\
+    $QUOTES
+\*------------------------------------*/
+/**
+ * English quote marks?
+ */
+$english-quotes:    true!default;
+
+/**
+ * If you want English quotes then please do not edit these; they’re only here
+ * because Sass needs them.
+ */
+$open-quote:    null;
+$close-quote:   null;
+
+/**
+ * If you need non-English quotes, please alter the following values accordingly:
+ */
+@if $english-quotes != true{
+    $open-quote:    \00AB;
+    $close-quote:   \00BB;
+}
+
+
+/* Base border */
+
+/* Base spacing unit variable, work out from base-line-height
+ * Added directly from inuit.css 
+ * ==================================================== */
+$base-spacing-unit: $base-line-height!default;
+$half-spacing-unit: $base-spacing-unit / 2!default;
+$line-height-ratio: $base-line-height / $base-font-size;$base-spacing-unit;

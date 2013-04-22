@@ -59,7 +59,7 @@
  * Accessibility feature.
  */
 
-.is-visually-hidden {
+@mixin visually-hidden {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -68,6 +68,10 @@
     padding: 0;
     position: absolute;
     width: 1px;
+}
+
+.is-visually-hidden {
+	@include visually-hidden;
 }
 
 /*
@@ -204,14 +208,17 @@
     text-transform:uppercase!important;
 }
 
-/* Add visually hidden classes in media queries */
-@if $responsive{
-    @each $state in palm, lap, lap-and-up, portable, desk, desk-wide{
-        @include media-query(#{$state}){
-            .accessibility--#{$state},
-            .visuallyhidden--#{$state}{
-                @include accessibility;
-            }
-        }
-    }
+
+/* Add visually hidden classes in media queries
+ * for all breakpoint in brakepoints list
+ */
+@if $responsive-visually-hidden == true {
+	@each $brakepoint in $breakpoints-list{
+	    @include media-query(#{$breakpoint}){
+	        .is-visually-hidden--#{$brakepoint}{
+	            @include visually-hidden;
+	        }
+	    }
+	}
 }
+
