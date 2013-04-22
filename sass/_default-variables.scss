@@ -12,6 +12,14 @@ $debug-mode: false!default;
  * http://paulirish.com/2012/box-sizing-border-box-ftw/  */
 $border-box-for-everything == true!default; 
 
+/* Interface base */
+$base-font-size:    16px!default;
+$base-line-height:  24px!default;
+
+$base-font-family:  sans-serif!default;
+
+/* Default user interface colour- borders, obecjts, etc */
+$base-ui-color:     #ccc!default;
 
 /*------------------------------------*\
     $QUOTES

@@ -56,7 +56,7 @@
 
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
- * Accessibility feature.
+ * Accessibility feature. Mixin for possibility to use within media-query mixin.
  */
 
 @mixin visually-hidden {

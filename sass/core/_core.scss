@@ -3,11 +3,16 @@
 
 
 /*
- * Box sizing border box for everything
+ * Box sizing border box for everything  - utilizing Compass
  * http://paulirish.com/2012/box-sizing-border-box-ftw/
  */
-* {
-	@include box-sizing(border-box);
+@if $border-box-for-everything == true {
+    * {
+        &,
+        &:before,
+        &:after{
+    	@include box-sizing(border-box);
+    }
 }
 
 html {
@@ -19,48 +24,6 @@ body {
 
 }
 
-/* ==========================================================================
- *  Images. Inspired by inuit.css
- * ========================================================================== */
-
-/* Fluid images */
-img{
-    max-width:100%;
-}
-
-/* Non fluid images. Have to specify  width and/or height */
-img[width],
-img[height]{
-    max-width:none;
-}
-
-
-/* Rounded images. */
-.img--round { border-radius:$base-border-radius; }
-
-
-/* Image positions */
-.img--right{
-    float:right;
-    margin-bottom:$base-spacing-unit;
-    margin-left:$base-spacing-unit;
-}
-.img--left{
-    float:left;
-    margin-right:$base-spacing-unit;
-    margin-bottom:$base-spacing-unit;
-}
-.img--center{
-    display:block;
-    margin-right:auto;
-    margin-bottom:$base-spacing-unit;
-    margin-left:auto;
-}
-
-/* Images in `figure` elements. */
-figure > img{
-    display:block;
-}
 
 /* ==========================================================================
    Lists. From inuit.css v5.0.0
