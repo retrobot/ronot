@@ -37,7 +37,7 @@ img[height]{
 .img--round { border-radius:$base-border-radius; }
 
 
-/* Image placement */
+/* Image positions */
 .img--right{
     float:right;
     margin-bottom:$base-spacing-unit;
@@ -53,6 +53,11 @@ img[height]{
     margin-right:auto;
     margin-bottom:$base-spacing-unit;
     margin-left:auto;
+}
+
+/* Images in `figure` elements. */
+figure > img{
+    display:block;
 }
 
 
